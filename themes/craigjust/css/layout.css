@@ -167,6 +167,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9A4826', end
 	padding-right: 32px;
 }
 
+#navigation ul li a:hover{
+text-shadow: 2px 2px 2px #2D6D75;	
+}
+
 #nav .first{
 	padding-left: 0px;
 }
@@ -203,7 +207,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9A4826', end
 #page-content-wrapper {
 	background-color: #f6f6f6;
 	padding: 30px;
-	min-height: 500px;
+	min-height: 1000px;
 
 }
 
@@ -212,10 +216,56 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9A4826', end
 	float: left;
 	
 }
+/*Group Person Page Styles*/
+
+#page-content.groupperson-page img{
+	width: 250px;
+	height: 355px;
+	float: left;
+	border: 2px solid #2D6D75;
+	margin-bottom: 10px;
+}
+
+.person-info{
+	width: 390px;
+	float: left;
+	margin-left: 10px;
+}
+
+.person-info a{
+	color: #6A3533;
+	text-decoration: none;
+}
+
+.person-info a:hover{
+	color: #6A3533;
+	text-decoration: underline;
+}
+
+.bio h3{
+	border-bottom: 1px solid #2D6D75;
+}
+
+#page-content.groupperson-page a{
+	font-size: 15px;
+	border-bottom: none;
+}
+
+.bio a {
+	color: #9e652e;
+	text-decoration: none;
+	font-weight: bold;
+}
+.bio a:hover {
+	text-decoration: underline;
+}
+
+
+/*End Group Person Page*/
 
 #page-content.project-page {
 	width: 100%;
-	float: none;
+	float: left;
 
 }
 
@@ -324,7 +374,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9A4826', end
 	float:left;
 	margin: 0;
 	padding: 0;
-	border-top: 1px solid #2D6D75;
+	border-top: 1px solid rgba(255, 255, 255,.3);
 	width: 1000px;
 
 }
@@ -345,10 +395,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9A4826', end
 	margin:0;
 	padding:10px 0 0 0;
 	color: #E99B23;
-	/*background-color: rgba(45, 109, 117,.3);
-	border-left: 1px solid #E99B23;
-	border-top: 1px solid #E99B23;
-	border-bottom: 1px solid #E99B23;*/
+	
 	
 	
 }
@@ -383,10 +430,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9A4826', end
 	margin:0;
 	padding:10px 0 2px 0;
 	font-size: 14px;
-	/*background-color: rgba(45, 109, 117,.3);
-	border-right: 1px solid #E99B23;
-	border-top: 1px solid #E99B23;
-	border-bottom: 1px solid #E99B23;*/
+
 }
 
 #footer-content ul.contact-info li {
