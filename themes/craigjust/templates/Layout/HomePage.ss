@@ -16,7 +16,7 @@
 					
 					<div id="homepage-content-wrapper">
 						<div id="homepage-news-wrapper" class="typography">
-						<h2 class="news">News</h3>
+						<h2 class="news">News and Highlights</h3>
 						
 						<% control BlogEntries(3) %>
 						<div class="news-post">

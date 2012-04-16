@@ -2,10 +2,14 @@
 <div id="page-content-wrapper">
 	<div id="page-content" class="groupperson-page">
 		<h1>$Title</h1>
+		<% if Image %>
 		$Image
+		<% end_if %>
 		<div class="person-info">
 				<h3>Area of Study</h3><p>$AreaOfStudy</p>
+			<% if Hometown %>	
 				<h3>Hometown</h3><p>$Hometown</p>
+			<% end_if %>
 			<% if ContactInfo %>
 				<h3>Contact Info</h3>
 					<% if PhoneNumber %>
@@ -24,7 +28,9 @@
 		<div class="bio">
 		<h3>Bio</h3>
 		$Content
-		<a href="$MoreInfoLink">Click Here for More Info</a>
+			<% if MoreInfoLink %>		
+				<a href="$MoreInfoLink">Click Here for More Info</a>
+			<% end_if %>
 		</div>
 		$Form
 	</div>
