@@ -29,7 +29,7 @@
 			
 				<div id="uiowa-bar">
 					<div id="uiowa-logo">
-					<a href="http://www.uiowa.edu/"><img src="$ThemeDir/images/uiowa-logo.png" /></a></div>
+					<a href="http://www.uiowa.edu/"><img src="$ThemeDir/images/uiowa-logo.png" alt="University of Iowa Logo"/></a></div>
 				</div>
 				
 				<div id="navigation-container">
@@ -93,7 +93,7 @@
 							<li><strong>Email</strong></li>
 							<li><strong>Phone</strong></li>
 							<li><strong>Fax</strong></li>
-							<li><a href="http://www.linkedin.com/pub/craig-just/26/202/634"><img src="http://craigjust.org/assets/social-l_2.png" border="0" class="linkedin"></a></li>
+							<li><a href="http://www.linkedin.com/pub/craig-just/26/202/634"><img src="http://craigjust.org/assets/social-l_2.png" alt="Linkedin Button" border="0" class="linkedin"></a></li>
 						</ul>
 						<ul class="contact-info">
 							<li>Craig Just</li>
@@ -105,7 +105,7 @@
 						</ul>
 
 						<ul class="iowa-logo">
-							<li><a href="http://www.uiowa.edu"><img src="http://craigjust.org/assets/uilogow.png"></a></li>
+							<li><a href="http://www.uiowa.edu"><img src="http://craigjust.org/assets/uilogow.png" alt="University of Iowa Logo"></a></li>
 							
 							<li><p class="copyright">&copy; $Now.Year <a href="http://www.uiowa.edu/">The University of Iowa</a></p></li>
 						</ul>
