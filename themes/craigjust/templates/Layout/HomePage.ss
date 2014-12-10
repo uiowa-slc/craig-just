@@ -44,7 +44,7 @@
 							<div class="clear"></div>
 							
 							<div id="homepage-aboutbox">
-								<img src="http://craigjust.org/assets/craig1.jpg" class="person">
+								<img src="http://craigjust.org/assets/craig1.jpg" alt="Main Photo" class="person">
 								$Content		
 							</div>
 							
