@@ -1,18 +1,5 @@
 <?php
 
-// global $project;
-// $project = 'mysite';
-
-// global $databaseConfig;
-// $databaseConfig = array(
-// 	"type" => 'MySQLDatabase',
-// 	"server" => 'localhost',
-// 	"username" => 'craigjust',
-// 	"password" => '8Ruspude',
-// 	"database" => 'craigjust',
-// 	"path" => '',
-// );
-
 global $project;
 $project = 'mysite';
 
