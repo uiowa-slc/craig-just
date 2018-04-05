@@ -10,7 +10,7 @@
 }
 
 .typography p {
-	color: #514432;
+	color: #6A3533;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	line-height: 22px;
@@ -29,18 +29,21 @@
 
 .typography h1, .typography h2, .typography h3, .typography h4 {
 	font-family:"Century Gothic", "Futura", 'Cabin', arial, serif;
-	color: #514432;
+}
+
+.typography h1 {
+	color: #333232;
 
 }
 
 .typography h3 {
-	color: #514432;
+	color: #9e652e;
 	font-size: 22px;
 	margin: 3px 0;
 }
 
 .typography h3 a {
-	color: #BD9355;
+	color: #9e652e;
 	text-decoration: none;
 }
 .typography h3 a:hover {
@@ -48,7 +51,7 @@
 }
 
 .typography h4 {
-	color: #2D6D75;
+	color: #24356e;
 	margin: 3px 0;
 
 }
@@ -61,8 +64,7 @@
 
 .typography h2.news {
 	margin-top: 0;
-	border-bottom: 1px solid #2D6D75;
-	color: #2D6D75;
+	border-bottom: 2px dotted #f15b4e;
 	padding-bottom: 10px;
 	text-transform: capitalize;
 
@@ -115,11 +117,10 @@
 	text-decoration: none;
 	margin: 5px 0;
 	padding: 0;
-	color: #514432;
+	color: #333232;
 
 
 }
-
 
 #footer-content p, #footer-content p a {
 	color: white;
@@ -141,18 +142,9 @@
  	line-height: 3px;
 }
 
-.nivo-caption{
-	background-color: #514432;
-}
-
 .nivo-caption p {
 	color: white;
-	background-color: #514432;
-}
 
-.nivo-directionNav a{
-	background-color: #514432;
-	opacity: .8;
 }
 
 
@@ -176,7 +168,7 @@
 }
 
 #page-sidebar h2 a {
-	color: #2D6D75;
+	color: #333;
 	text-decoration: none;
 }
 

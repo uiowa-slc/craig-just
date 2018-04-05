@@ -4,9 +4,9 @@
 					        
 					            <div id="slider" class="nivoSlider">
 					               
-					              <% control ChildrenOf(main-features) %> 
+					              <% loop ChildrenOf(main-features) %> 
 					              <a href="$LinkURL"><img src="$Image.URL" alt="Image of $Title" title="$Caption" /></a>
-					              <% end_control %>
+					              <% end_loop %>
 					              
 					            </div>
 					   
@@ -16,15 +16,15 @@
 					
 					<div id="homepage-content-wrapper">
 						<div id="homepage-news-wrapper" class="typography">
-						<h2 class="news">News and Highlights</h3>
+						<h2 class="news">News</h3>
 						
-						<% control BlogEntries(3) %>
+						<% loop BlogPosts(3) %>
 						<div class="news-post">
-							<h3><a href="$Link">$MenuTitle</a></h3>
-							<p class="authorDate"><% _t('POSTED', 'Posted') %> <% _t('POSTEDON', 'on') %> $Date.Long | $Comments.Count <% _t('COMMENTS', 'Comments') %></p>
+							<h3><a href="$Link">$MenuTitle - $PublishDate</a></h3>
+							<p class="authorDate">on $PublishDate.NiceUS</p>
 							$Content	
 						</div>
-						<% end_control %>
+						<% end_loop %>
 						
 					</div>
 						<div id="homepage-content">
@@ -36,15 +36,15 @@
 							
 							<!--<div id="project-list">
 								<ul>
-									<% control ChildrenOf(featured-projects) %>
+									<% loop ChildrenOf(featured-projects) %>
 										<li><a href="$Link">$Title</a></li>
-									<% end_control %> 
+									<% end_loop %> 
 								</ul>
 							</div>-->
 							<div class="clear"></div>
 							
 							<div id="homepage-aboutbox">
-								<img src="http://craigjust.org/assets/craig1.jpg" alt="Main Photo" class="person">
+								<img src="http://craigjust.org/assets/craig1.jpg" class="person">
 								$Content		
 							</div>
 							

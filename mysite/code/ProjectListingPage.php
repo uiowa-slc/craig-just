@@ -1,13 +1,13 @@
 <?php
 class ProjectListingPage extends Page {
 
-	public static $db = array(
+	private static $db = array(
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 	);
 	
-	static $allowed_children = array('ProjectPage');
+	private static $allowed_children = array('ProjectPage');
 
 
 
@@ -29,7 +29,7 @@ class ProjectListingPage_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {

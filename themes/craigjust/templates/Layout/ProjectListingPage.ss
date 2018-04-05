@@ -9,13 +9,13 @@
 	<div id="page-content" class="project-page">
 	$Content
 		<div class="projects">
-		<% control Children %>
+		<% loop Children %>
 			<div class="box project $EvenOdd">
 				<h2>$Title</h2>
 				$Content
 			
 			</div>
-		<% end_control %>
+		<% end_loop %>
 		</div>
 		
 		$Form

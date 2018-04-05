@@ -1,12 +1,12 @@
 <?php
 class HomePageFeature extends Page {
 
-	public static $db = array(	
+	private static $db = array(	
 		"Caption" => "Text",
 		"LinkURL" => "Text"
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 	
 		"Image" => "Image"
 	
@@ -15,9 +15,9 @@ class HomePageFeature extends Page {
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
 		$fields->removeFieldFromTab("Root.Content.Main", "Content");
-		$fields->addFieldToTab('Root.Content.Main', new ImageField('Image', 'Main Feature Image (1000 x 431 pixels)'));
-		$fields->addFieldToTab('Root.Content.Main', new TextField('Caption', 'Image Caption'));
-		$fields->addFieldToTab('Root.Content.Main', new TextField('LinkURL', 'Link URL'));
+		$fields->addFieldToTab('Root.Main', new ImageField('Image', 'Main Feature Image (1000 x 431 pixels)'));
+		$fields->addFieldToTab('Root.Main', new TextField('Caption', 'Image Caption'));
+		$fields->addFieldToTab('Root.Main', new TextField('LinkURL', 'Link URL'));
 
 		
 		return $fields;
@@ -42,7 +42,7 @@ class HomePageFeature_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {

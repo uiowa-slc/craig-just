@@ -1,10 +1,10 @@
 <?php
 class Page extends SiteTree {
 
-	public static $db = array(
+	private static $db = array(
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 	);
 
 }
@@ -25,13 +25,12 @@ class Page_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 	
-	public function BlogEntries($limit = 3){
-		$entries = DataObject::get("BlogEntry", null, "Date DESC", null, $limit);
-		if($entries)
-			return $entries;
+	public function BlogPosts($limit = 3){
+		$holder = Blog::get()->First();
+		return $holder->getBlogPosts()->Limit(3);
 	}
 
 	public function init() {

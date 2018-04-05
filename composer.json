@@ -1,0 +1,59 @@
+{
+    "name": "md/sustainability",
+    "description": "Sustainability Website",
+    "require": {
+        "php": ">=5.3.2",
+        "silverstripe/cms": "3.6.*@stable",
+        "silverstripe/framework": "3.6.*@stable",
+        "md/ac-json-events" : "dev-master",
+        "md/division-bar" : "dev-master",
+        "md/rss-display" : "dev-master",
+        "silverstripe/blog" : "2.*",
+        "undefinedoffset/sortablegridfield" : "*",
+        "silverstripe/widgets": "*",
+        "silverstripe/userforms": "4.*@stable",
+        "silverstripe/event-calendar": "*",
+        "jonom/focuspoint":"2.4.*",
+        "silverstripe/activedirectory" : "3.*",
+        "silverstripe/secureassets":"1.1.*",
+        "md/uiowa-bar":"*",
+        "md/division-analytics":"1.*",
+        "wilr/silverstripe-googlesitemaps": "*",
+    },
+    "config": {
+        "process-timeout": 600
+    },
+    "minimum-stability": "dev",
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/rss-display"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/division-analytics"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-activedirectory"
+
+        },
+        {
+             "type": "vcs",
+             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-betternavigator"
+        }
+    ]
+}

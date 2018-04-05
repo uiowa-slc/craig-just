@@ -13,10 +13,10 @@
 		<h3><% _t('VIEWINGPOSTEDIN', 'Viewing entries posted in') %> $SelectedDate.Month $SelectedDate.Year</h3>
 	<% end_if %>
 	
-	<% if BlogEntries %>
-		<% control BlogEntries %>
+	<% if BlogPosts %>
+		<% loop BlogPosts %>
 				<% include BlogSummary %>
-		<% end_control %>
+		<% end_loop %>
 	<% else %>
 		<h3><% _t('NOENTRIES', 'There are no blog entries') %></h3>
 	<% end_if %>
