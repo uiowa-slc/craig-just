@@ -18,7 +18,7 @@
         "silverstripe/secureassets":"1.1.*",
         "md/uiowa-bar":"*",
         "md/division-analytics":"1.*",
-        "wilr/silverstripe-googlesitemaps": "*",
+        "wilr/silverstripe-googlesitemaps": "*"
     },
     "config": {
         "process-timeout": 600
