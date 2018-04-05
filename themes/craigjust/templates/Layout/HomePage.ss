@@ -20,7 +20,7 @@
 						
 						<% loop BlogPosts(3) %>
 						<div class="news-post">
-							<h3><a href="$Link">$MenuTitle - $PublishDate</a></h3>
+							<h3><a href="$Link">$MenuTitle</a></h3>
 							<p class="authorDate">on $PublishDate.NiceUS</p>
 							$Content	
 						</div>
