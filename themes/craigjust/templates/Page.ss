@@ -5,9 +5,9 @@
 		<title><% if MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> - $SiteConfig.Title - The University of Iowa</title>
 		$MetaTags(false)
 		<link rel="shortcut icon" href="/favicon.ico" />
-		<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="{$ThemeDir}/css/reset.css">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="$BaseHref/mysite/javascript/jquery/jquery-1.5.2.min.js"></script>
 		<script type="text/javascript" src="$BaseHref/mysite/javascript/slider/jquery.nivo.slider.js"></script>
 		<link rel="stylesheet" type="text/css" href="$BaseHref/mysite/javascript/slider/nivo-slider.css"/>
