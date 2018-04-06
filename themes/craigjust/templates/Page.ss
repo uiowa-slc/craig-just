@@ -6,8 +6,9 @@
 		$MetaTags(false)
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="{$ThemeDir}/css/reset.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="{$ThemeDir}/css/reset.css">
+		
 		<script type="text/javascript" src="$BaseHref/mysite/javascript/jquery/jquery-1.5.2.min.js"></script>
 		<script type="text/javascript" src="$BaseHref/mysite/javascript/slider/jquery.nivo.slider.js"></script>
 		<link rel="stylesheet" type="text/css" href="$BaseHref/mysite/javascript/slider/nivo-slider.css"/>
@@ -36,7 +37,7 @@
 					<div id="navigation">
 						<div id="logo">
 						<a href="$BaseHref"><!--<img src="$ThemeDir/images/logo.png" class="logo" />-->
-						<span>$SiteConfig.Title</span>
+						<span class="navigation__site-title">$SiteConfig.Title</span>
 						$SiteConfig.Tagline
 						</a>
 						

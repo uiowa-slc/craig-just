@@ -151,7 +151,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9A4826', end
 	float: right;
 	
 }
-
+.navigation__site-title{
+	text-transform: uppercase;
+}
 .logo {float: left;}
 
 #navigation ul li {
