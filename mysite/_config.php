@@ -18,7 +18,9 @@ FulltextSearchable::enable();
 if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
 
 Requirements::set_force_js_to_bottom(true);
-
+if(Director::isLive()) {
+	Director::forceSSL();
+}
 // add a button to remove formatting
 HtmlEditorConfig::get('cms')->insertButtonsBefore(
     'styleselect',

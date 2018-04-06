@@ -83,7 +83,7 @@
 					
 					<div class="footing">
 						<ul class="iowa-logo">
-							<li><a href="http://www.uiowa.edu"><img src="http://craigjust.org/assets/uilogow.png"></a></li>
+							<li><a href="http://www.uiowa.edu"><img src="https://craigjust.org/assets/uilogow.png"></a></li>
 							
 							<li><p class="copyright">&copy; $Now.Year <a href="http://www.uiowa.edu/">The University of Iowa</a></p></li>
 						</ul>
@@ -95,7 +95,7 @@
 							<li>(319) 335-5660</li>
 							<li>IIHR - Hydroscience and Engineering <a href="http://www.iihr.uiowa.edu/">Website</a></li>
 							<li>Department of Civil and Environmental Engineering<a href="http://www.cee.engineering.uiowa.edu/"> Website</a></li>
-							<li><a href="http://www.linkedin.com/pub/craig-just/26/202/634"><img src="http://craigjust.org/assets/social-l_2.png" border="0" class="linkedin"></a></li>
+							<li><a href="http://www.linkedin.com/pub/craig-just/26/202/634"><img src="https://craigjust.org/assets/social-l_2.png" border="0" class="linkedin"></a></li>
 						</ul>
 
 
