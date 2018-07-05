@@ -12,10 +12,10 @@ class HomePageFeature extends Page {
 	
 	);
 	
-	function getCMSFields() {
+	public function getCMSFields() {
 		$fields = parent::getCMSFields();
-		$fields->removeFieldFromTab("Root.Content.Main", "Content");
-		$fields->addFieldToTab('Root.Main', new ImageField('Image', 'Main Feature Image (1000 x 431 pixels)'));
+		$fields->removeFieldFromTab("Root.Main", "Content");
+		$fields->addFieldToTab('Root.Main', new UploadField('Image', 'Main Feature Image (1000 x 431 pixels)'));
 		$fields->addFieldToTab('Root.Main', new TextField('Caption', 'Image Caption'));
 		$fields->addFieldToTab('Root.Main', new TextField('LinkURL', 'Link URL'));
 
