@@ -23,9 +23,9 @@
 				<% loop BlogPosts(3) %>
 			
 					<h3><a href="$Link">$MenuTitle</a></h3>
-					<p class="authorDate">on $PublishDate.Nice</p>
+					
 					$Content	
-			
+					<p class="small">Posted on $PublishDate.Format("MMMM d, YYYY")</p>
 				<% end_loop %>
             </div>
             <div class="col-md">
