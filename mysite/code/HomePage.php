@@ -1,4 +1,10 @@
 <?php
+
+use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
+use Symbiote\GridFieldExtensions\GridFieldAddNewMultiClass;
+use SilverStripe\Forms\GridField\GridFieldAddNewButton;
+use SilverStripe\Forms\GridField\GridField;
+use  UndefinedOffset\SortableGridField\Forms\GridFieldSortableRows;
 class HomePage extends Page {
 
 	private static $db = array(
@@ -7,29 +13,18 @@ class HomePage extends Page {
 	private static $has_one = array(
 	);
 
-}
-class HomePage_Controller extends Page_Controller {
+	private static $icon_class = 'font-icon-p-home';
 
-	/**
-	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
-	 * permissions or conditions required to allow the user to access it.
-	 *
-	 * <code>
-	 * array (
-	 *     'action', // anyone can access this action
-	 *     'action' => true, // same as above
-	 *     'action' => 'ADMIN', // you must have ADMIN permissions to access this action
-	 *     'action' => '->checkAction' // you can only access this action if $this->checkAction() returns true
-	 * );
-	 * </code>
-	 *
-	 * @var array
-	 */
-	private static $allowed_actions = array (
-	);
+	public function getCMSFields() {
+		$f = parent::getCMSFields();
 
-	public function init() {
-		parent::init();
+		$f->removeByName("BackgroundImage");
+		$f->removeByName("InheritSidebarItems");
+		$f->removeByName("SidebarLabel");
+		$f->removeByName("SidebarItem");
 
+		return $f;
 	}
+
+	
 }
