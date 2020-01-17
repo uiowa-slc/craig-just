@@ -7,7 +7,8 @@ $(document).ready(function() {
           imagesLoaded: true,
           percentPosition: false,
         autoPlay: true,
-        wrapAround: true
+        wrapAround: true,
+        adaptiveHeight: true
     });
 
     var $caption = $('.carousel-caption');

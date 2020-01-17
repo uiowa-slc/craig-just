@@ -5,8 +5,8 @@
 		<div class="col-lg">
             <div class="main-carousel">
             	<% loop $ChildrenOf("main-features") %>
-                <div class="carousel-cell" class="d-block w-100">
-                    <img src="$Image.URL" alt="$Caption.ATT">
+                <div class="carousel-cell">
+                    <img src="$Image.ScaleWidth(1280).URL" class="d-block w-100" alt="$Caption.ATT">
                 </div>
                 <% end_loop %>
 
