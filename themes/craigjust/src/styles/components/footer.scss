@@ -33,6 +33,11 @@
 			font-size: rem-calc(14);
 			margin-bottom: 12px;
 		}
+
+		a{
+			color: white;
+			text-decoration: underline;
+		}
 	}
 	&__heading {
 		font-size: rem-calc(16);
