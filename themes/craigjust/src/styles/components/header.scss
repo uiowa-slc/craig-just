@@ -3,3 +3,10 @@
 	background: linear-gradient(180deg, rgba(77,43,23,1) 0%, rgba(52,28,15,1) 100%);
 	border-bottom: 4px solid $gold;
 }
+.navbar-tagline{
+	font-size: 11px;
+
+	@include media-breakpoint-up(xl) {
+		font-size: 13px;
+	}
+}
