@@ -81,6 +81,17 @@ body{
 	h1{
 		margin-bottom: 15px;
 	}
+
+	img{
+		max-width: 100% !important;
+	}
+
+	p{
+
+		@include media-breakpoint-up(md) {
+			text-align: justify;
+		}
+	}
 }
 .vh-75{
 	min-height: 75vh;
