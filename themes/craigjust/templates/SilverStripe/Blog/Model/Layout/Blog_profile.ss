@@ -8,7 +8,7 @@
 
 
 					<% if $PaginatedList.Exists %>
-						<h2>Posts by $CurrentProfile.FirstName $CurrentProfile.Surname:</h2>
+						<h1>Posts by $CurrentProfile.FirstName $CurrentProfile.Surname:</h1>
 						<% loop $PaginatedList %>
 							<% include SilverStripe\\Blog\\PostSummary %>
 						<% end_loop %>

@@ -1,19 +1,20 @@
 <% include Header %>
 <main role="main">
+	<div class="container pt-2">
+		<div class="row no-gutters">
+			<div class="col-lg">
+	            <div class="main-carousel">
+	            	<% loop $ChildrenOf("main-features") %>
+	                <div class="carousel-cell">
+	                    <img src="$Image.ScaleWidth(1280).URL" class="d-block w-100" alt="$Caption.ATT">
+	                </div>
+	                <% end_loop %>
 
-	<div class="row no-gutters">
-		<div class="col-lg">
-            <div class="main-carousel">
-            	<% loop $ChildrenOf("main-features") %>
-                <div class="carousel-cell">
-                    <img src="$Image.ScaleWidth(1280).URL" class="d-block w-100" alt="$Caption.ATT">
-                </div>
-                <% end_loop %>
+	            </div>
+	            <p class="carousel-caption">&nbsp;</p>
+			</div>
 
-            </div>
-            <p class="carousel-caption">&nbsp;</p>
 		</div>
-
 	</div>
 
     <div class="container pt-5">
@@ -27,6 +28,9 @@
 					$Content	
 					<p class="small">Posted on $PublishDate.Format("MMMM d, YYYY")</p>
 				<% end_loop %>
+				<% if $BlogPosts.Count > 3 %>
+					<p><a href="$BlogPosts.First.Parent.Link" class="btn btn-primary">View all news</a></p>
+				<% end_if %>
             </div>
             <div class="col-md">
             	<img src="assets/craig1.jpg" class="home-craig-pic" />
