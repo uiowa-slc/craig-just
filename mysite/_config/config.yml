@@ -9,7 +9,7 @@ BlogPost:
 SilverStripe\View\SSViewer:
   themes:
     - '$public'
-    - 'craigjust'
+    - 'bootstrap'
     - '$default'
 SilverStripe\Assets\Flysystem\AssetAdapter:
   file_permissions:
