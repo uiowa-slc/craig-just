@@ -52,7 +52,7 @@
 --------------------------------------------*/
 @import "uiowa-bar";
 
-
+@import "uids";
 @import "mixins/remcalc";
 
 /* Layout
@@ -62,52 +62,54 @@
 @import "layouts/homepage";
 
 .no-gutters {
-  margin-right: 0;
-  margin-left: 0;
+    margin-right: 0;
+    margin-left: 0;
 
-  > .col,
-  > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
-  }
+    >.col,
+    >[class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
 
 
-body{
-	background-image: url(../images/content-bg.png);
-	background-repeat: repeat-x;
+body {
+    background-image: url(../images/content-bg.png);
+    background-repeat: repeat-x;
 }
 
-.content-container{
-	padding-top: 40px;
+.content-container {
+    padding-top: 40px;
 
-	h1{
-		margin-bottom: 15px;
-	}
+    h1 {
+        margin-bottom: 15px;
+    }
 
-	img{
-		max-width: 100% !important;
-		height: auto !important;
-	}
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
 
-	p{
+    p {
 
-		@include media-breakpoint-up(md) {
-			text-align: justify;
-		}
-	}
-}
-.vh-75{
-	min-height: 75vh;
+        @include media-breakpoint-up(md) {
+            text-align: justify;
+        }
+    }
 }
 
-h1{
-	color:#333232;
+.vh-75 {
+    min-height: 75vh;
 }
 
-.sec-nav-header{
-	font-size: 22px;
-	a{
-		color: #222;
-	}
+h1 {
+    color: #333232;
+}
+
+.sec-nav-header {
+    font-size: 22px;
+
+    a {
+        color: #222;
+    }
 }
